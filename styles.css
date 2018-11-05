@@ -42,7 +42,6 @@ img {
 
 #logo {
 	text-align: center;
-	background-color: red;
 }
 
 /* imessage */
@@ -134,8 +133,6 @@ form input {
 }
 
 #logo {
-	cursor: pointer;
-	width: 40px;
-	height: auto;
+	
 }
 
