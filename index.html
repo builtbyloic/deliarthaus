@@ -1,34 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" href="./fontawesome/css/all.css">
-	<script src="scripts/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-	<div class="container">
+	<div id="tinted" class="image container">
 
-		<!--<img id="logo" src="assets/images/deli.png">-->
+		<img src="assets/images/tinted.jpg" width="200" height="auto">
+		<img src="assets/images/tinted_3.jpg" width="200" height="auto">
+		<img src="assets/images/tinted_2.jpg" width="200" height="auto">
 
-		<p id="date"><b>Today </b>12:39 PM</p>
+	</div>
 
-		<button class="bubble" id="grey">This site is under construction.</button>
+	<div id="random" class="image container">
 
-		<button class="bubble" id="blue">Ok.</button>
+		<img src="assets/images/random.jpg" width="200" height="auto" padding-left="30px" style="margin-bottom: 30px;">
 
-		<p id="delivered">Delivered</p>
+		<img src="assets/images/random_2.jpg" width="350" height="auto" style="margin-left: -30px; z-index: -1;">
+
+	</div>
+
+	<div id="quote" class="image container">
+
+		<p style="font-size: 18px;">"Nothing is original. Steal from anywhere that resonates with inspiration or fuels your imagination."</p>
+		<p style="text-align: right;">— Jim Jarmusch</p>
+
+	</div>
+
+	<div id="thesenights" class="image container">
+
+		<iframe src="https://player.vimeo.com/video/272855562?autoplay=1&color=d4d4d4f&title=0&byline=0&portrait=0" width="640" height="272" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+	</div>
+
+	<div id="livenation" class="image container">
+
+		<img src="assets/images/livenation.png" width="250" height="auto">
+		<img src="assets/images/livenation_2.png" width="250" height="auto">
+
+	</div>
+
+
+	<div id="quote" class="image container">
+
+		<p style="font-size: 18px;">"You shouldn’t dream your film, you should make it!"</p>
+		<p style="text-align: right;">— Steven Spielberg</p>
+
+	</div>
+
+	<!--
+
+	<div id="imessage" class="image container">
+
+		<p id="date" style="text-align: center;"> <b>Today </b>12:39 PM</p>
+
+		<button class="bubble" id="received">This site is under construction.</button>
+
+		<button class="bubble" id="sent">Ok.</button>
+
+		<br>
+
+		<p id="delivered" style="text-align: right;">Delivered</p>
 
 		<form>
 
 			<input type="text" id="message" placeholder="Leave a message..." maxlength="60" rows="1"></input>
 
-			<button id="send" type="button" name="send" onclick="document.querySelector('#text2').innerHTML = document.querySelector('#myText').value" value="Copy Name"><i class="far fa-arrow-up"></i></button>
+			<button id="send" type="button" name="send"><i class="far fa-arrow-up"></i></button>
 
 		</form>
-
+		
 	</div>
 
+	-->
+
+	<div id="footer">
+		<a href="#"></a><img id="logo" src="assets/images/deli.png"></a>
+		<!-- <p>© 2018 Deli Art Haus</p> -->
+	</div>
+
+
+
+	<script src="scripts/script.js"></script>
+
+	<script>
+var x = document.getElementById("circlesaudio"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+
+function pauseAudio() { 
+    x.pause(); 
+} 
+</script>
 </body>
 </html>
