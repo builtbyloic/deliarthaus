@@ -17,14 +17,7 @@ img {
 /* CONTENT */
 
 .container {
-	position: absolute;
-	background-color: ;
-	padding: 0;
-	margin: 0;
-  	top: 50%;
-  	left: 50%;
-  	margin-right: -50%;
-	transform: translate(-50%, -50%);
+
 
 }
 
@@ -46,39 +39,112 @@ img {
 
 /* imessage */
 
-#imessage {
-	width: 400px;
+--------------------
+
+
+.wrapper {
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .phone-containter {
+  	background-color: red;
+    width: 280px;
+    height: 100%;
+  }
+  .phone {
+    height: 20%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+.button {
+  background-color: none;
+  border: 1px solid #36a9fc;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  
+  display: block;
+  width: 80px;
+  text-align: center;
+  overflow: hidden;
+  text-oveflow: ellipsis;
+  margin: 20px auto;
 }
 
-.bubble {
-	display: block;
-	margin-top:; 
-	margin-bottom:;
-	padding-bottom: 7px;
-	padding-top: 7px;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 25px;
-	outline: none;
+.build-container {
+  width: 230px;
+  height: 100%;
+  margin-left: 20px;
+  float: right;
+}
+#buildInput {
+  width: 100%;
+  height: 60%;
 }
 
-#received {
-	background-color: #000;
-	color: #d4d4d4f2;
-	border: none;
-
+/* Messages baloon */
+.message {
+  margin: 10px 0;
+  overflow: hidden;
+}
+.message-text {
+  padding: 10px 20px;
+  float: right;
+  clear: both;
+  border-radius: 25px;
+  position: relative;
+  margin-bottom: 1px;
+}
+.message.left .message-text {
+  margin-right: 70px;
+  margin-left: 20px;
+  background-color: #afafaf;
+  float: left;
+}
+.message.right .message-text {
+  margin-left: 70px;
+  margin-right: 20px;
+  background-color: #000;
+  color: #fff;
+  float: right;
 }
 
-#sent {
-	background-color: transparent;
-	border: 1px solid #000;
-
-
+.message.right .message-text:before,
+.message.right .message-text:after {
+  border-radius: 0 0 0 50%;
+}
+.message.right .message-text:before {
+  height: 20px;
+  right: -23px;
+  background-color: #000;
+}
+.message.right .message-text:after {
+  right: -35px;
+  bottom: -3px;
+  background-color: #d4d4d4f2;
 }
 
 
-form {
-	display: flex;
+.message.left .message-text:before,
+.message.left .message-text:after {
+  border-radius: 0 0 50% 0;
+}
+.message.left .message-text:before {
+  height: 20px;
+  left: -23px;
+  background-color: #afafaf;
+}
+.message.left .message-text:after {
+  left: -35px;
+  bottom: -3px;
+  background-color: #d4d4d4f2;
+}
+
+.send-container {
+ 	display: flex;
 	background-color: transparent;
     border: 1px solid #000;
     border-radius: 25px;
@@ -87,13 +153,10 @@ form {
     outline: none;
     resize: none;
     flex-direction: row;
-
 }
-
-form input {
-	background-color: transparent;
+.send-input {
+  	background-color: transparent;
     border: none;
-
     font-size: 12px;
     box-shadow: none;
     line-height: 1.5;
@@ -103,11 +166,9 @@ form input {
     padding-bottom: 3px;
     resize: none;
     flex-grow:2;
-
 }
-
-#send {
-	background-color: #000;
+.send-btn {
+  	background-color: #000;
 	color: #d4d4d4f2;
 	border: none;
 	outline: none;
@@ -115,24 +176,5 @@ form input {
 	height:25px;
    	width:25px;
    	border-radius: 25px;
-
-}
-
-.far {
-}
-
-
-/* FOOTER */
-
-#footer {
-	position: absolute;
-  	right: 0;
-  	bottom: 0;
-  	left: 0;
-  	padding: 26px;
-}
-
-#logo {
-	
 }
 
