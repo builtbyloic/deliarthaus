@@ -38,7 +38,7 @@
 
 	html, body {height: 98%; position: relative; margin: 0;}
 	body {
-		background-color: #d4d4d4f2;
+		background-color: #fff;
 		font-family: Helvetica, Arial, serif;
 		font-size: 9px;
 		padding: 1%;
@@ -124,17 +124,15 @@
 	}
 	.message.left .message-text {
 		margin-right: 70px;
-
-		border: 1px solid #000;
-		background-color: transparent;
+		background-color: #e6e5eb;
 		color: black;
 		float: left;
 	}
 	.message.right .message-text {
 		margin-left: 70px;
 
-		background-color: #000;
-		color: #d4d4d4f2;
+		background-color: #2fa9fb;
+		color: #fff;
 		float: right;
 	}
 
@@ -173,7 +171,7 @@
 	#send {
 		display: flex;
 		background-color: transparent;
-		border: 1px solid #ababab;
+		border: 1px solid #e6e5eb;
 		border-radius: 25px;
 		font-size: 13px;
 		box-shadow: none;
@@ -182,6 +180,7 @@
 		flex-direction: row;
 
 	}
+
 	.send-input {
 		background-color: transparent;
 		border: none;
@@ -197,9 +196,14 @@
 		flex-grow:1;
 		cursor: text;
 	}
+
+	.send-input::placeholder {
+		color: #e6e5eb;
+	}
+
 	.send-btn {
-		background-color: #000;
-		color: #d4d4d4f2;
+		background-color: #36a9fc;
+		color: #fff;
 		border: none;
 		outline: none;
 		margin: 2px;
@@ -211,7 +215,7 @@
 	}
 
 	.send-btn:hover {
-		opacity: 0.2;
+		opacity: 0.5;
 	}
 
 	.fa-arrow-up {
